@@ -6,9 +6,9 @@ fn convert_string_to_int(string:& String) -> i32 {
 }
 
 fn main() {
-    println!("Insira o número que deseja calcular o valor fatorial: ");
+    println!("Please insert the number you wish to get the factorial value: ");
     let mut input: String = String::new();
-    io::stdin().read_line(&mut input).expect("Erro ao ler entrada!");
+    io::stdin().read_line(&mut input).expect("Error while reading input!");
 
     let mut count: i32 = convert_string_to_int(&input);
     let mut factorial: i32 = count;
@@ -18,5 +18,5 @@ fn main() {
         count = count - 1;
     }
 
-    println!("O fatorial de {} é: {}", number, factorial);
+    println!("The factorial value of {} is: {}", number, factorial);
 }
