@@ -8,7 +8,7 @@ fn convert_string_to_int(string:& String) -> i32 {
 fn is_prime(num: i32) -> bool {
     let mut prime: bool = true;
     let mut count: i32 = 2;
-    let limit: i32 = num/2;
+    let limit: i32 = (num as f64).sqrt() as i32+1;
 
     if num <= 1 {
         prime = false;
