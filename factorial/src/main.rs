@@ -18,5 +18,5 @@ fn main() {
         count = count - 1;
     }
 
-    println!("The factorial value of {} is: {}", number, factorial);
+    println!("The factorial value of {} is: {}", input, factorial);
 }
